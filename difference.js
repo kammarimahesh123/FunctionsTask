@@ -7,7 +7,12 @@ function differene(n){
         let diff=obsdiff*2;
         console.log(diff);
     }
+    else if(n<0)
+    {
+        let diff=obsdiff*(-2)
+        console.log(diff)
+    }
 
 }
 
-differene(20)
+differene(-20)
