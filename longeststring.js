@@ -1,17 +1,36 @@
-
-function longest(){
-    let str=["Mahesh","veeresh","kammariTulasi","vaishnav"]
+var str=["Mahesh","veeresh","kammariTulasi","vaishnav"];
+function longest(str)
+{
     let max=0;
-    let longest;
-    for (let i=0;i<=str.length;i++)
+    let long="";
+    let n=str.length;
+    for (let i=0;i<=n;i++)
     {
-        if(str[i].length> max)
+        if(str[i].length > max)
         {
-            max=str[i].length;
-            longest=str[i];
+            max=str[i].length
+            long=str[i];
         }
     
     }
-    console.log(longest)
+    console.log(long)
 }
-longest();
+longest(str);
+/////////////////////////////////////////////////
+
+var arr=["I","am","Mahesh","i","live","in","Hyderabad"]
+
+function longestword(arr){
+
+    let lngth=""
+
+    arr.forEach(function(x)
+    {
+        if(x.length>lngth.length)
+        {
+            lngth=x;
+        }
+    });
+    return lngth;
+}
+console.log(arr)
